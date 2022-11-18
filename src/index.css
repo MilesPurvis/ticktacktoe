@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:family=Nunito+Sans:ital,wght@1,700&family=Righteous&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 20px;
+}
+
+.container {
+  padding: 20px;
+  background-color: #cdb4db;
+  border-radius: 20px;
+  box-shadow: #cdb4db 0 20px 100px 0;
+  max-width: 450px;
+  color: rgba(255, 255, 255);
+}
+
+.container h2 {
+  text-align: center;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 30px;
+}
+
+.square {
+  background: #fcfcfc;
+  border: 1px solid rgba(192, 192, 192, 0.4);
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  margin-top: 1px;
+  margin-right: 1px;
+  height: 34px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  border-radius: 6px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.game-info {
+  margin-left: 40px;
+}
+
+.game-info div {
+  text-align: center;
+  font-size: large;
+}
+
+li button {
+  margin-top: 5px;
+  border-radius: 8px;
+  padding: 4px;
+  width: 10em;
+  border: 1px solid silver;
+  color: #292929;
+  font-weight: 700;
 }
